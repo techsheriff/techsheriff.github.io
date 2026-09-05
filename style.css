@@ -1,59 +1,261 @@
+/* cv.techsheriff.net — rebuilt 2026-09-04.
+   One accent color, two fonts, grid layout with stacked mobile fallback, print-friendly. */
+
+:root {
+    --accent: #1f3a5f;        /* deep navy: headings, links, rules */
+    --accent-soft: #2e5077;
+    --ink: #1d1f21;           /* body text */
+    --muted: #5f6672;         /* dates, meta lines */
+    --paper: #fafaf8;         /* page background */
+    --panel: #f1f2ee;         /* sidebar tint */
+    --rule: #d8dad4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-    max-width: 960px;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    color: var(--ink);
+    background-color: var(--paper);
+    max-width: 1020px;
     margin: auto;
-}
-h1 {
-    font-size: 3em;
-    letter-spacing: .6em;
-    padding-top: .5em;
-    padding-bottom: .5em;
+    padding: 0 1em;
 }
 
-h2 {
-    font-size: 1.5em;
-    padding-bottom: 0.4em;
-}
+/* ---------- header ---------- */
 
-h3 {
-    font-size: 1em;
-    padding-bottom: 0.3em;
-}
-
-```css
-    main { 
-        display: grid;
-        grid-template-columns: 40% 60%;
-        margin-top: 2.5em;
-    }
-```
-```css
 header {
     text-align: center;
-    margin: auto 2em;
+    margin: 2.5em 2em 0;
 }
 
-section {
-    margin: auto 1em 4em 2em;
+h1 {
+    font-family: 'Fraunces', Georgia, serif;
+    font-size: 2.8em;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0;
+    padding: 0.3em 0 0.25em;
 }
 
-i {
-    margin-right: .5em;
-}
-
-p {
-    margin: .2em auto
+header strong {
+    display: inline-block;
+    font-family: 'Fraunces', Georgia, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.05em;
+    color: var(--muted);
+    padding: 0.6em 0;
 }
 
 hr {
     border: none;
-    background-color: lightgray;
+    background-color: var(--rule);
     height: 1px;
+    margin: 0 auto;
+    max-width: 28em;
 }
 
-h1, h2, h3 {
-    font-weight: 140;
-    margin-bottom: 0;
+/* ---------- layout ---------- */
+
+main {
+    display: grid;
+    grid-template-columns: 37% 63%;
+    gap: 0;
+    margin-top: 2.2em;
 }
-```
+
+#mainLeft {
+    background-color: var(--panel);
+    border-radius: 10px;
+    padding: 0.4em 1.4em 1em;
+    align-self: start;
+}
+
+#mainRight {
+    padding-left: 2.2em;
+}
+
+section {
+    margin: 0 0 2.4em;
+}
+
+/* ---------- headings ---------- */
+
+h2 {
+    font-size: 0.95em;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 0.35em;
+    margin: 1.6em 0 0.8em;
+}
+
+h2 strong {
+    font-weight: 700;
+}
+
+/* ---------- links ---------- */
+
+a {
+    color: var(--accent-soft);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(46, 80, 119, 0.35);
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+a:hover, a:focus {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+/* ---------- lists & text ---------- */
+
+p {
+    margin: 0.25em auto;
+}
+
+ul {
+    padding-left: 1.15em;
+    margin: 0.5em 0 1.2em;
+}
+
+li {
+    margin-bottom: 0.6em;
+}
+
+li::marker {
+    color: var(--accent-soft);
+}
+
+li strong {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+i.fab {
+    margin-right: 0.5em;
+    color: var(--accent-soft);
+    width: 1.2em;
+    text-align: center;
+}
+
+/* ---------- experience entries ---------- */
+
+.job {
+    margin-bottom: 1.6em;
+}
+
+.job-title {
+    font-size: 1.05em;
+    font-weight: 650;
+    color: var(--ink);
+    margin: 0;
+}
+
+.job-meta {
+    color: var(--muted);
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    margin: 0.1em 0 0.2em;
+}
+
+.job-desc {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.95em;
+    margin: 0 0 0.4em;
+}
+
+/* ---------- certifications ---------- */
+
+.cert-list {
+    font-weight: 500;
+    margin-bottom: 0.9em;
+}
+
+.badge-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6em;
+    justify-content: flex-start;
+}
+
+/* ---------- skills ---------- */
+
+#mainLeft section p {
+    font-size: 0.95em;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 720px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    #mainRight {
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+        letter-spacing: 0.08em;
+    }
+}
+
+/* ---------- print: clean one-column resume ---------- */
+
+@media print {
+    body {
+        background: #fff;
+        color: #000;
+        font-size: 11pt;
+        max-width: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        margin-top: 0.5em;
+    }
+
+    #mainLeft {
+        background: none;
+        padding: 0;
+    }
+
+    #mainRight {
+        padding-left: 0;
+    }
+
+    .badge-grid {
+        display: none;   /* cert names print from .cert-list */
+    }
+
+    a {
+        color: #000;
+        border-bottom: none;
+    }
+
+    h1, h2, li strong {
+        color: #000;
+    }
+
+    h2 {
+        border-bottom-color: #000;
+    }
+
+    section {
+        margin-bottom: 1.2em;
+        break-inside: avoid;
+    }
+}
