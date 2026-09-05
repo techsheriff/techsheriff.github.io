@@ -1,261 +1,37 @@
-/* cv.techsheriff.net — rebuilt 2026-09-04.
-   One accent color, two fonts, grid layout with stacked mobile fallback, print-friendly. */
+:root{--ink:#1c1a17;--mut:#7a746b;--acc:#8a4b2d;--bg:#faf7f2;--rule:#e3ddd2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:4.5rem 1.5rem}
+h1{font:700 3.9rem/1.05 "Space Grotesk",sans-serif;margin:0;letter-spacing:-.02em}
+.tag{font:400 1.15rem Inter,sans-serif;color:var(--mut);margin:.8rem 0 1.2rem}
+.contact a{color:var(--acc);text-decoration:none;margin-right:1.4rem;font-weight:500;border-bottom:1px solid var(--rule)}
+h2{font:600 .85rem Inter;letter-spacing:.22em;text-transform:uppercase;color:var(--acc);margin:3.2rem 0 1rem;display:flex;align-items:center;gap:1rem}
+h2:after{content:"";flex:1;height:1px;background:var(--rule)}
+.about{font:400 1.15rem/1.7 Inter,sans-serif}
+.hob{color:var(--mut);font-size:.95rem}
+.pill{display:inline-block;border:1px solid var(--rule);border-radius:999px;padding:.25rem .8rem;margin:0 .4rem .5rem 0;font-size:.85rem;color:#4c463e;background:#fff}
+.job{margin-bottom:2.2rem}.jobhead{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.job h3{font:700 1.25rem "Space Grotesk",sans-serif;margin:0}
+.dates{color:var(--mut);font-size:.85rem;white-space:nowrap}
+.jobmeta{margin:.15rem 0 0;font-weight:600;font-size:.9rem}
+.jobdesc{margin:.15rem 0 .5rem;color:var(--mut);font-style:italic;font-size:.95rem}
+ul{padding-left:1.2rem;margin:.4rem 0}li{margin-bottom:.55rem}li::marker{color:var(--acc)}
+li b{color:var(--acc);font-weight:600}
+a{color:var(--acc)}
+.talks li{margin-bottom:.7rem}.venue{color:var(--mut);font-size:.85rem}
+.cert,.edu p{margin:.2rem 0}footer{margin-top:4rem;color:var(--mut);font-size:.85rem;text-align:center}
 
-:root {
-    --accent: #1f3a5f;        /* deep navy: headings, links, rules */
-    --accent-soft: #2e5077;
-    --ink: #1d1f21;           /* body text */
-    --muted: #5f6672;         /* dates, meta lines */
-    --paper: #fafaf8;         /* page background */
-    --panel: #f1f2ee;         /* sidebar tint */
-    --rule: #d8dad4;
-}
+.certrow{display:flex;flex-wrap:wrap;gap:.5rem .6rem}
+.certpill{display:inline-block;border:1px solid var(--rule);border-radius:999px;padding:.25rem .8rem;font-size:.85rem;font-weight:500;color:var(--acc);background:#fff;text-decoration:none;border-bottom:1px solid var(--rule)}
+.certpill:hover{border-color:var(--acc)}
+@media (max-width:560px){h1{font-size:2.5rem}}
 
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 17px;
-    line-height: 1.55;
-    color: var(--ink);
-    background-color: var(--paper);
-    max-width: 1020px;
-    margin: auto;
-    padding: 0 1em;
-}
-
-/* ---------- header ---------- */
-
-header {
-    text-align: center;
-    margin: 2.5em 2em 0;
-}
-
-h1 {
-    font-family: 'Fraunces', Georgia, serif;
-    font-size: 2.8em;
-    font-weight: 600;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin: 0;
-    padding: 0.3em 0 0.25em;
-}
-
-header strong {
-    display: inline-block;
-    font-family: 'Fraunces', Georgia, serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 1.05em;
-    color: var(--muted);
-    padding: 0.6em 0;
-}
-
-hr {
-    border: none;
-    background-color: var(--rule);
-    height: 1px;
-    margin: 0 auto;
-    max-width: 28em;
-}
-
-/* ---------- layout ---------- */
-
-main {
-    display: grid;
-    grid-template-columns: 37% 63%;
-    gap: 0;
-    margin-top: 2.2em;
-}
-
-#mainLeft {
-    background-color: var(--panel);
-    border-radius: 10px;
-    padding: 0.4em 1.4em 1em;
-    align-self: start;
-}
-
-#mainRight {
-    padding-left: 2.2em;
-}
-
-section {
-    margin: 0 0 2.4em;
-}
-
-/* ---------- headings ---------- */
-
-h2 {
-    font-size: 0.95em;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--accent);
-    border-bottom: 2px solid var(--accent);
-    padding-bottom: 0.35em;
-    margin: 1.6em 0 0.8em;
-}
-
-h2 strong {
-    font-weight: 700;
-}
-
-/* ---------- links ---------- */
-
-a {
-    color: var(--accent-soft);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(46, 80, 119, 0.35);
-    transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-a:hover, a:focus {
-    color: var(--accent);
-    border-bottom-color: var(--accent);
-}
-
-/* ---------- lists & text ---------- */
-
-p {
-    margin: 0.25em auto;
-}
-
-ul {
-    padding-left: 1.15em;
-    margin: 0.5em 0 1.2em;
-}
-
-li {
-    margin-bottom: 0.6em;
-}
-
-li::marker {
-    color: var(--accent-soft);
-}
-
-li strong {
-    color: var(--accent);
-    font-weight: 600;
-}
-
-i.fab {
-    margin-right: 0.5em;
-    color: var(--accent-soft);
-    width: 1.2em;
-    text-align: center;
-}
-
-/* ---------- experience entries ---------- */
-
-.job {
-    margin-bottom: 1.6em;
-}
-
-.job-title {
-    font-size: 1.05em;
-    font-weight: 650;
-    color: var(--ink);
-    margin: 0;
-}
-
-.job-meta {
-    color: var(--muted);
-    font-size: 0.9em;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    margin: 0.1em 0 0.2em;
-}
-
-.job-desc {
-    color: var(--muted);
-    font-style: italic;
-    font-size: 0.95em;
-    margin: 0 0 0.4em;
-}
-
-/* ---------- certifications ---------- */
-
-.cert-list {
-    font-weight: 500;
-    margin-bottom: 0.9em;
-}
-
-.badge-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.6em;
-    justify-content: flex-start;
-}
-
-/* ---------- skills ---------- */
-
-#mainLeft section p {
-    font-size: 0.95em;
-}
-
-/* ---------- responsive ---------- */
-
-@media (max-width: 720px) {
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    #mainRight {
-        padding-left: 0;
-    }
-
-    h1 {
-        font-size: 2em;
-        letter-spacing: 0.08em;
-    }
-}
-
-/* ---------- print: clean one-column resume ---------- */
-
-@media print {
-    body {
-        background: #fff;
-        color: #000;
-        font-size: 11pt;
-        max-width: none;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-        margin-top: 0.5em;
-    }
-
-    #mainLeft {
-        background: none;
-        padding: 0;
-    }
-
-    #mainRight {
-        padding-left: 0;
-    }
-
-    .badge-grid {
-        display: none;   /* cert names print from .cert-list */
-    }
-
-    a {
-        color: #000;
-        border-bottom: none;
-    }
-
-    h1, h2, li strong {
-        color: #000;
-    }
-
-    h2 {
-        border-bottom-color: #000;
-    }
-
-    section {
-        margin-bottom: 1.2em;
-        break-inside: avoid;
-    }
+/* print */
+@media print{
+ body{background:#fff;color:#000;font-size:11pt}
+ .wrap{padding:0;max-width:none}
+ .contact a,.certpill,a{color:#000;border:none;text-decoration:underline}
+ h1,h2,.job h3,li b{color:#000}
+ .pill,.certpill{border:1px solid #999;background:#fff}
+ .job{break-inside:avoid}
+ footer{display:none}
 }
