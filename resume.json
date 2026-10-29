@@ -1,0 +1,216 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Syed Shareef",
+    "label": "Sr. Security Solutions Architect",
+    "email": "sawdeck@gmail.com",
+    "url": "https://cv.techsheriff.net/",
+    "summary": "Cloud security architect who removes the security blockers that stall cloud adoption. Advises some of the largest cloud environments in the world and has built the automated guardrails that let developers move fast safely. Current focus is AI security: threat modeling agentic AI systems and securing LLM applications.",
+    "location": {
+      "city": "Dallas",
+      "region": "TX",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "techsheriff",
+        "url": "https://www.linkedin.com/in/techsheriff/"
+      },
+      {
+        "network": "GitHub",
+        "username": "techsheriff",
+        "url": "https://github.com/techsheriff"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Amazon Web Services",
+      "position": "Sr. Security Solutions Architect, Strategic Accounts",
+      "startDate": "2023",
+      "summary": "Security advisor to a portfolio of AWS's largest customers",
+      "highlights": [
+        "Hyperscale cloud adoption: Removed the primary security blocker at one of AWS's largest strategic accounts. Showed how the AWS Nitro System's hardware-rooted security met their internal data-classification bar, which unlocked sensitive-data workloads on EC2 for the first time.",
+        "AI security practice: Presented \"Novice to MAESTRO,\" a session on threat modeling agentic AI systems, at BSides DFW 2025. Earlier, created a hands-on workshop on securing LLM applications with custom data; it was picked for AWS's 300-level field-enablement curriculum and taught twice in 2024.",
+        "AI infrastructure security: Partnered with Meta on their end-to-end AWS security architecture (identity, network, and resource controls, plus secure AI clusters) and designed secure egress patterns for AI and HPC workloads; co-presented at re:Invent 2025 and re:Inforce 2025.",
+        "Adaptive edge protection: Architected Twilio's adaptive protection on AWS WAF: rules generated just-in-time and deployed through a no-touch CI/CD pipeline, protecting 1.7+ trillion interactions a year across 306,000+ customers. Co-presented at re:Inforce 2024.",
+        "Identity modernization: Cut long-lived IAM users by ~80% at a major social-media customer through migration to IAM Identity Center, and turned their feedback into service roadmap items.",
+        "Multi-account governance: Guided Pinterest's transformation from a monolithic AWS account to a multi-account AWS Organization (published on the AWS Management & Governance blog).",
+        "DNS-first egress design: Designed Pinterest's layered egress controls: deny at the DNS resolver first, so blocked traffic never reaches Network Firewall inspection. Written up in a two-part AWS Networking & Content Delivery blog series."
+      ]
+    },
+    {
+      "name": "Amazon Web Services",
+      "position": "Security Engineer, AWS Control Tower",
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "Product-side security engineering: proactive controls that validate infrastructure before it deploys",
+      "highlights": [
+        "Policy-as-code at scale: Shipped 220+ production controls (preventive, proactive, detective) with a 3-engineer team, writing Python and extensive CloudFormation Guard DSL. Creator and security reviewer for the majority of the controls portfolio; carried production on-call."
+      ]
+    },
+    {
+      "name": "Amazon Web Services",
+      "position": "Sr. Security Solutions Architect, FSI & Enterprise",
+      "startDate": "2019",
+      "endDate": "2022",
+      "summary": "Security advisor to major financial services and enterprise customers",
+      "highlights": [
+        "Cloud perimeter protection: Reduced time to market by 3 months for an FSI customer's first app handling sensitive data in the cloud, through a layered perimeter control architecture based on threat modeling, using native and third-party security services.",
+        "Cloud security posture transformation: Led a major FSI to consolidate on a single CSPM tool, decreasing remediation time by 40%, and helped deploy a managed centralized CSPM deployment that cut costs by 20%.",
+        "Cloud-native vulnerability management: Cut a major financial exchange's patching time by 20-25% and tooling cost by 40% by replacing appliance-based scanning with cloud-native vulnerability management.",
+        "High-risk workload migration: Enabled 6x faster migration of a major manufacturer's workloads classified as high-risk, through threat modeling and managed-container security controls.",
+        "Product roadmap influence: Influenced the roadmaps of 18 AWS services by advocating strategic customers' security needs to service teams.",
+        "Platform evangelization: Wrote AWS's most-read security blog of 2021, co-authored the AWS Log4Shell response guidance, and co-created the FSI Service Spotlight blog series that helps customers accelerate AWS service approval through a standardized compliance and security framework."
+      ]
+    },
+    {
+      "name": "Slalom Consulting",
+      "position": "Solution Architect",
+      "startDate": "2017",
+      "endDate": "2019",
+      "summary": "Cloud security architect responsible for client delivery, proposals, new business opportunities, knowledge management",
+      "highlights": [
+        "DevSecOps transformation: Led a DevSecOps transformation for a global client: assessed the security needs of multiple DevOps teams, conducted POCs of pipeline security tools, and created roadmaps for deployment.",
+        "Cloud security assessments: Ensured cloud-native applications under development were compliant with regulatory and business requirements and resilient to attacks; accelerated an application migration with a threat-model-driven S3 data-protection strategy and layered controls."
+      ]
+    },
+    {
+      "name": "Citigroup",
+      "position": "Information Security Officer & Operational Risk Manager",
+      "startDate": "2013",
+      "endDate": "2017",
+      "summary": "Technology & cyber risk advisor to supported business entities",
+      "highlights": [
+        "Privileged access reduction: Managed a program that reduced persistent privileged access by 8x across 12,000 users in Citigroup's end-user computing organization.",
+        "Business unit security SME: Acted as cybersecurity partner for Citigroup's end-user computing engineering and operations groups, ensuring apps were developed to Secure SDLC principles and operated in alignment with company security policy.",
+        "Risk manager: Managed technology & operational risk for the consumer banking division by liaising with first-line and audit groups; ensured security control alignment with the firm's risk appetite and compliance needs (GDPR, SOX, FFIEC)."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Southern Methodist University",
+      "area": "Executive MBA",
+      "studyType": "Master of Business Administration"
+    },
+    {
+      "institution": "Osmania University",
+      "area": "Electrical Engineering",
+      "studyType": "Bachelor of Engineering"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "AWS Certified Solutions Architect – Professional",
+      "issuer": "Amazon Web Services",
+      "url": "https://www.credly.com/badges/c3b687c3-cca6-4484-8be4-96484f0d4abd"
+    },
+    {
+      "name": "AWS Certified Security – Specialty",
+      "issuer": "Amazon Web Services",
+      "url": "https://www.credly.com/badges/7b8c737e-b5a9-4a21-bc02-8a7bf8df3f36"
+    },
+    {
+      "name": "CISSP-ISSAP",
+      "issuer": "ISC2",
+      "url": "https://www.credly.com/badges/1916e828-b750-4df7-ad79-3a1009502f7c"
+    },
+    {
+      "name": "CISSP",
+      "issuer": "ISC2",
+      "url": "https://www.credly.com/badges/7fd8dda6-e7a7-4638-916b-c2d6bfa31df7"
+    },
+    {
+      "name": "CSSLP",
+      "issuer": "ISC2",
+      "url": "https://www.credly.com/badges/d3b399c7-f1b8-4cfd-ab40-8b91ef0dd197"
+    },
+    {
+      "name": "Claude Certified Associate – Foundations",
+      "issuer": "Anthropic",
+      "date": "2026-09-11"
+    }
+  ],
+  "skills": [
+    { "name": "Cloud Security Architecture" },
+    { "name": "AI/LLM & Agentic Security" },
+    { "name": "Threat Modeling" },
+    { "name": "IAM & Data Perimeters" },
+    { "name": "Network Security" },
+    { "name": "Policy-as-Code (Python, CloudFormation Guard)" },
+    { "name": "DevSecOps" },
+    { "name": "Pre-sales" },
+    { "name": "Compliance" },
+    { "name": "Security Strategy" }
+  ],
+  "publications": [
+    {
+      "name": "Novice to MAESTRO: threat modeling agentic AI systems",
+      "publisher": "BSides DFW",
+      "releaseDate": "2025-11",
+      "url": "https://bsidesdfw.com/sessions/2025"
+    },
+    {
+      "name": "Meta's insights on implementing AWS security controls at scale",
+      "publisher": "AWS re:Invent",
+      "releaseDate": "2025-12",
+      "url": "https://www.youtube.com/watch?v=5rTuf6bsYlM"
+    },
+    {
+      "name": "How Meta enabled secure egress patterns using AWS Network Firewall",
+      "publisher": "AWS re:Inforce",
+      "releaseDate": "2025-06",
+      "url": "https://www.youtube.com/watch?v=me0uQLIZEfM"
+    },
+    {
+      "name": "Secure your APIs the Well-Architected way (with Twilio)",
+      "publisher": "AWS re:Inforce",
+      "releaseDate": "2024-06",
+      "url": "https://www.youtube.com/watch?v=0IReZ4I5W54"
+    },
+    {
+      "name": "Network Perimeter Security (AWS data perimeters)",
+      "publisher": "Scale to Zero podcast",
+      "releaseDate": "2023-01",
+      "url": "https://scaletozero.com/episodes/network-perimeter-security-with-syeed-sharee"
+    },
+    {
+      "name": "AWS Internet access at scale: a cloud-native internet edge",
+      "publisher": "AWS re:Inforce",
+      "releaseDate": "2022-07",
+      "url": "https://www.youtube.com/watch?v=tWMb6c_RhSM"
+    },
+    {
+      "name": "Cutting AWS KMS costs with Amazon S3 bucket keys",
+      "publisher": "AWS re:Inforce",
+      "releaseDate": "2022-07",
+      "url": "https://d1.awsstatic.com/events/aws-reinforce-2022/DPP331_Best-practices-for-cutting-AWS-KMS-costs-using-Amazon-S3-bucket-keys.pdf"
+    },
+    {
+      "name": "Ransomware resilience in the cloud",
+      "publisher": "UNC Charlotte Cybersecurity Symposium",
+      "releaseDate": "2021-10",
+      "url": "https://cybersecuritysymposium.charlotte.edu/speaker/syed-shareef"
+    },
+    {
+      "name": "Log4Shell response guidance",
+      "publisher": "AWS Security Blog",
+      "releaseDate": "2021-12",
+      "url": "https://aws.amazon.com/blogs/security/using-aws-security-services-to-protect-against-detect-and-respond-to-the-log4j-vulnerability/"
+    },
+    {
+      "name": "FSI Service Spotlight blog series",
+      "publisher": "AWS for Industries",
+      "releaseDate": "2021",
+      "url": "https://aws.amazon.com/blogs/industries/tag/financial-services-industry-service-spotlight-series/"
+    }
+  ],
+  "interests": [
+    { "name": "Woodworking" },
+    { "name": "Miatas" },
+    { "name": "US history" },
+    { "name": "BBQ" }
+  ]
+}
