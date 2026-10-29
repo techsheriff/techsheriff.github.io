@@ -4,7 +4,7 @@
 
 This site (cv.techsheriff.net) is a single-page CV. The full content is plain semantic HTML at the root URL; no JavaScript is required to read any of it.
 
-Career summary: AWS Sr. Security Solutions Architect for Strategic Accounts (2023–present) and previously for FSI & Enterprise (2019–2022), with a product stint as Security Engineer on AWS Control Tower (2022–2023) shipping 220+ policy-as-code controls. Before AWS: cloud security architecture at Slalom Consulting (2017–2019) and information security / operational risk at Citigroup (2013–2017). Certifications: AWS Solutions Architect Professional, AWS Security Specialty, CISSP-ISSAP, CISSP, CSSLP, Anthropic Claude Certified Associate – Foundations. Education: Executive MBA (Southern Methodist University), B.E. Electrical Engineering (Osmania University).
+Career summary: AWS Sr. Security Solutions Architect for Strategic Accounts (2023–present) and previously for FSI & Enterprise (2019–2022), with a product stint as Security Engineer on AWS Control Tower (2022–2023) shipping 220+ policy-as-code controls. Before AWS: cloud security architecture at Slalom Consulting (2017–2019) and information security / operational risk at Citigroup (2013–2017). Certifications: AWS Solutions Architect Professional, AWS Security Specialty, CISSP-ISSAP, CISSP, CSSLP, Anthropic Claude Certified Associate – Foundations. Education: Executive MBA (Southern Methodist University), B.E. Electrical Engineering (Osmania University). Work authorization: U.S. citizen; no visa sponsorship required.
 
 ## Machine-readable resume
 
